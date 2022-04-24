@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      input {
+        width: 70%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      .top-button {
+        font-size: 20px;
+      }
+      .recorder {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 300px">
+      <div>
+        <button class="top-button" id="add-button">+</button>
+        <button class="top-button recorder" id="record-button">Record</button>
+        <button class="top-button recorder" id="stop-record-button">
+          Stop
+        </button>
+      </div>
+      <div id="carea"></div>
+      <input id="text-box" type="hidden" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
